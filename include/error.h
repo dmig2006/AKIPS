@@ -1,0 +1,65 @@
+#ifndef ERROR_H
+#define ERROR_H
+
+#define UPDATEBUTTON
+#define DISPLAY
+#define FILEREAD; // если стоит только чтение
+#define FILEDELETE // Усли файл удален
+
+#ifdef DISPLAY
+    #define WIDTH 1366.0f
+    #define HEIGHT 700.0f
+#endif
+
+
+
+//COM PORT
+#define COM_PORT_ERROR -1
+#define COM_PORT_CLOSED 0
+#define COM_PORT_CONNECTED 1
+
+#define COM_PORT_STATE_OFF 0
+#define COM_PORT_STATE_CONNECTED 1
+#define COM_PORT_STATE_LISTEN 2
+#define COM_PORT_STATE_WAIT_DATA 3
+#define COM_PORT_STATE_WRITE_DATA 4
+#define COM_PORT_STATE_READ_DATA 5
+
+
+#define COM_PORT_ERROR_NO 0
+#define COM_PORT_ERROR_NO_COM_PORT 1
+#define COM_PORT_ERROR_BAD_PATH_TO_COM 2
+#define COM_PORT_ERROR_OPEN_COM 3
+#define COM_PORT_ERROR_SET_BAUD 4
+#define COM_PORT_ERROR_SET_DATABIT 5
+#define COM_PORT_ERROR_SET_PARITY 6
+#define COM_PORT_ERROR_WRITE_DATA 7
+#define COM_PORT_ERROR_READ_DATA 8
+#define COM_PORT_ERROR_CRC8 9
+#define COM_PORT_ERROR_DISCONECTED 10  //Таймаут чтения ком порта
+
+//Main window
+#define ERROR_WRITE_SERIAL 20
+#define ERROR_NO_CHANGE_FILE 21
+#define ERROR_PORT_OPEN 22
+#define ERROR_WRITE_NUMBER 23
+#define ERROR_RESULT 24
+
+#ifdef FILEREAD
+    #define ERROR_READ_FILE 25
+#endif
+
+#ifdef FILEDELETE
+    #define ERROR_DELETE_FILE 26
+#endif
+
+//Sqlite
+#define SQL_WINDOW_ERROR_OPENDB 41
+#define SQL_WINDOW_ERROR_OPENTABLE 42
+#define SQL_WINDOW_ERROR_TIMEOUT_DATA 43
+
+//KPA_ROCKET
+#define ERROR_ROCKET 61
+
+
+#endif // ERROR_H

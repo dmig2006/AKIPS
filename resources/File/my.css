@@ -1,0 +1,110 @@
+QWidget
+{
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #c8c2c2, stop: 1 #7f7a7a);
+}
+
+QPushButton
+{
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+					stop: 0 #F0E2E2, stop: 1 #B9B6B6);
+    color:#777070;
+    border:none;
+    border: 2px outset #858585;
+    border-radius: 4px;
+}
+
+QPushButton:pressed
+{
+	background-color: #989197;
+	color:#777070;
+	border: 2px inset #858585;
+	border-radius: 4px;                                                 
+}
+
+QTextEdit
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	border-radius: 4px;
+}
+
+QLineEdit
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	border-radius: 4px;
+}
+
+QLabel
+{
+        background-color:none;
+	color: #000000;
+}
+
+QListWidget
+{
+        background-color: #FFFFFF;
+        color: #000000;
+}
+
+
+QMenu
+{
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                    stop:0 lightgray, stop:1 darkgray);
+    color:black;
+}
+QMenu::item:pressed
+{
+    background: #888888;
+}
+
+QMenuBar
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 lightgray, stop:1 darkgray);
+}
+QMenuBar::item
+{
+    spacing: 3px;
+    padding: 1px 4px;
+    background: transparent;
+    border-radius: 4px;
+}
+QMenuBar::item:selected
+{
+    background: #a8a8a8;
+}
+QMenuBar::item:pressed
+{
+    background: #888888;
+}
+
+QComboBox
+{
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #c8c2c2, stop: 1 #7f7a7a);
+    color:#000000;
+}
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    selection-background-color: black;
+}
+
+QTableWidget QHeaderView
+{
+    background-color:darkgray;
+}
+QTableWidget QHeaderView::section
+{
+    background-color:darkgray;
+    color:black;
+}
+QTableCornerButton::section
+{
+    background-color:darkgray;
+}
+
+

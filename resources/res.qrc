@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>File/my.css</file>
+        <file>images/COM_CONNECT.png</file>
+        <file>images/COM_DISCONNECT.png</file>
+        <file>images/HELP.png</file>
+        <file>images/LOGO.png</file>
+        <file>images/SAVE_AS.png</file>
+        <file>images/SAVE.png</file>
+        <file>images/UPDATE.png</file>
+        <file>images/CLOSE.png</file>
+        <file>images/TURN.png</file>
+        <file>images/ENGLISH.png</file>
+        <file>images/RUSSION.png</file>
+        <file>images/TABLE.png</file>
+    </qresource>
+</RCC>
